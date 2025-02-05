@@ -1,0 +1,114 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(219, 103, 103);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+.logo {
+    width: 150px;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: #0066CC;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(12, 12, 12, 0.5);
+    color: rgb(222, 212, 212);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 20px;
+}
+
+.key-val {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f9f9f9;
+}
+
+.key-val:nth-child(even) {
+    background: #f0f0f0;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: rgb(191, 120, 120);
+}
+
+header.dark-mode {
+    background-color: #333;
+}
+
+input.dark-mode, button.dark-mode {
+    background-color: #444;
+    color: white;
+    border: 1px solid #888;
+}
+
+button.dark-mode:hover {
+    opacity: 0.8;
+}
+
+button[type="reset"].dark-mode {
+    background-color: #d32f2f;
+}
+
+.dark-mode-toggle.dark-mode {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
